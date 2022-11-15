@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA318D28292434710009369C /* HashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA318D26292434710009369C /* HashTable.cpp */; };
 		CAC36717291C065E007E5281 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAC36716291C065E007E5281 /* main.cpp */; };
 		CAC3671F291C0A2E007E5281 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAC3671D291C0A2E007E5281 /* LinkedList.cpp */; };
 		CAC36722291C7B96007E5281 /* DoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAC36720291C7B95007E5281 /* DoublyLinkedList.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA318D26292434710009369C /* HashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashTable.cpp; sourceTree = "<group>"; };
+		CA318D27292434710009369C /* HashTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HashTable.hpp; sourceTree = "<group>"; };
 		CAC36713291C065E007E5281 /* MTH9815_HW1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MTH9815_HW1; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC36716291C065E007E5281 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CAC3671D291C0A2E007E5281 /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				CAC36716291C065E007E5281 /* main.cpp */,
+				CA318D26292434710009369C /* HashTable.cpp */,
+				CA318D27292434710009369C /* HashTable.hpp */,
 				CAC3671D291C0A2E007E5281 /* LinkedList.cpp */,
 				CAC3671E291C0A2E007E5281 /* LinkedList.hpp */,
 				CAC36720291C7B95007E5281 /* DoublyLinkedList.cpp */,
@@ -131,6 +136,7 @@
 			files = (
 				CAC3671F291C0A2E007E5281 /* LinkedList.cpp in Sources */,
 				CAC36722291C7B96007E5281 /* DoublyLinkedList.cpp in Sources */,
+				CA318D28292434710009369C /* HashTable.cpp in Sources */,
 				CAC36717291C065E007E5281 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 #include <iostream>
 #include "LinkedList.hpp"
 #include "DoublyLinkedList.hpp"
+#include "HashTable.hpp"
 
 template <typename T>
 void Print(const LinkedList<T>& list) {
@@ -40,8 +41,7 @@ void PrintBackAndForth(const DoublyLinkedList<T>& list) {
 }
 
 
-int main(int argc, const char * argv[]) {
-    
+void TestLinkedList() {
     LinkedList<int> list;
 
     list.Add(1);
@@ -56,7 +56,9 @@ int main(int argc, const char * argv[]) {
     Print(list);
 
     std::cout << list.IndexOf(3) << ' ' << list.IndexOf(7) << ' ' << list.Get(2) << std::endl;
-    
+}
+
+void TestDoublyLinkedList() {
     DoublyLinkedList<int> dlist;
 
     dlist.Add(1);
@@ -73,5 +75,32 @@ int main(int argc, const char * argv[]) {
     std::cout << dlist.IndexOf(3) << ' ' << dlist.IndexOf(7) << ' ' << dlist.Get(2) << std::endl;
     
     PrintBackAndForth(dlist);
+}
+
+void TestHashTable() {
+    HashTable<int, int> ht(100);
+    
+    ht.add(201, 12);
+    ht.add(202, 212);
+    ht.add(18, 4);
+    ht.add(101, 33);
+    ht.add(102, 418);
+    ht.print();
+    
+    std::cout << "\nFind key = 102 : " << *ht.find(102) << "\n";
+    std::cout << "\nAfter Erase key = 202: \n";
+    ht.erase(202);
+    ht.print();
+    std::cout << "\nAfter Erase key = 101: \n";
+    ht.erase(101);
+    ht.print();
+}
+
+int main(int argc, const char * argv[]) {
+    
+    TestLinkedList();
+    TestDoublyLinkedList();
+    TestHashTable();
+    
     return 0;
 }
